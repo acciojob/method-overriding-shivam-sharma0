@@ -1,21 +1,35 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package com.driver;
 
 public class Main {
-    static public class A {
-
-        public String meth(){
-            return "Invoking method from class A";
-        }
+    public Main() {
     }
-    public static class B extends A{
-        @Override
-        public String meth(){
+
+    public static void main(String[] args) {
+        B check = new B();
+        check.meth();
+        check.meth();
+    }
+
+    public static class B extends A {
+        public B() {
+        }
+
+        public String meth() {
             return "Method is overridden in Extendend class B";
         }
     }
-    public static void main(String[] args) {
-        B check=new B();
-        check.meth();
-        check.meth();
+
+    public static class A {
+        public A() {
+        }
+
+        public String meth() {
+            return "Invoking method from class A";
+        }
     }
 }
